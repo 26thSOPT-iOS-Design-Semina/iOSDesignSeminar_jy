@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 1-->
+        <scene sceneID="Mil-2K-uiZ">
+            <objects>
+                <viewController id="ocg-1A-bYd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9x6-Ev-9zN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7Ps-74-VNb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="dml-w3-WVK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQ1-Qk-L2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1484" y="1120"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GfF-dG-OQw">
+            <objects>
+                <tabBarController id="pDJ-b7-Hef" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uE7-Da-7Xn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ocg-1A-bYd" kind="relationship" relationship="viewControllers" id="2Um-rK-ROT"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="pAy-8E-44w"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqa-XD-q0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1484" y="392"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSDesignSeminar_jy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1125"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OG1-01-LO5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1076"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHI-Ev-HvQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1125"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyBgThecamp" translatesAutoresizingMaskIntoConstraints="NO" id="JII-g1-vz1">
+                                                <rect key="frame" x="0.0" y="44" width="393" height="57"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="57" id="vCe-s6-EJ3"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="armyBtnThecamp" translatesAutoresizingMaskIntoConstraints="NO" id="d19-Pv-NX4">
+                                                <rect key="frame" x="131" y="49" width="123" height="47"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyBtnMyprofile" translatesAutoresizingMaskIntoConstraints="NO" id="wUx-qm-cg4">
+                                                <rect key="frame" x="331" y="56" width="51" height="33"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL7-k5-OJz">
+                                                <rect key="frame" x="20" y="117" width="91.5" height="28"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="문화/생활">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="NotoSansKR-Bold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyImgCultureBg" translatesAutoresizingMaskIntoConstraints="NO" id="j5n-S9-TXM">
+                                                <rect key="frame" x="20" y="159" width="335" height="182"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BeE-57-Frk">
+                                                <rect key="frame" x="37" y="176" width="301" height="143"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JJi-mC-oRb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="301" height="64"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyIconShop" translatesAutoresizingMaskIntoConstraints="NO" id="vAc-iK-Z6r">
+                                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyIconTrip" translatesAutoresizingMaskIntoConstraints="NO" id="bW9-rM-Eyf">
+                                                                <rect key="frame" x="79" y="0.0" width="64" height="64"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyIconFood" translatesAutoresizingMaskIntoConstraints="NO" id="sra-sA-Xu8">
+                                                                <rect key="frame" x="158" y="0.0" width="64" height="64"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyIconWifi" translatesAutoresizingMaskIntoConstraints="NO" id="oCc-o1-wxS">
+                                                                <rect key="frame" x="237" y="0.0" width="64" height="64"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9oI-Si-QiA">
+                                                        <rect key="frame" x="0.0" y="79" width="301" height="64"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyIconFinance" translatesAutoresizingMaskIntoConstraints="NO" id="k2A-tW-YhQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyIconSelf" translatesAutoresizingMaskIntoConstraints="NO" id="Kau-V3-czz">
+                                                                <rect key="frame" x="79" y="0.0" width="64" height="64"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyIconDonate" translatesAutoresizingMaskIntoConstraints="NO" id="Lzh-Zr-vgj">
+                                                                <rect key="frame" x="158" y="0.0" width="64" height="64"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyIconDrama" translatesAutoresizingMaskIntoConstraints="NO" id="Lrg-Nb-c8g">
+                                                                <rect key="frame" x="237" y="0.0" width="64" height="64"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="143" id="QOi-Ji-Nup"/>
+                                                    <constraint firstAttribute="width" constant="301" id="nbd-4A-zTS"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRU-mk-fM5">
+                                                <rect key="frame" x="20" y="358" width="255" height="28"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="더캠프 만의 특별한 서비스!">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="NotoSansKR-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Om3-gw-3mm">
+                                                <rect key="frame" x="20" y="403" width="335" height="320"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyImgService1" translatesAutoresizingMaskIntoConstraints="NO" id="D3l-d2-xfp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="100"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyImgService2" translatesAutoresizingMaskIntoConstraints="NO" id="3QS-CX-COT">
+                                                        <rect key="frame" x="0.0" y="110" width="335" height="100"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyImgService3" translatesAutoresizingMaskIntoConstraints="NO" id="92K-6L-blR">
+                                                        <rect key="frame" x="0.0" y="220" width="335" height="100"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="320" id="R1x-YG-2Q1"/>
+                                                    <constraint firstAttribute="width" constant="335" id="eOO-No-d1O"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-IZ-r7T">
+                                                <rect key="frame" x="27" y="782" width="108" height="20"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="진행중인 이벤트">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.30196078431372547" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="17" name="NotoSansKR-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyButtonEventArrow" translatesAutoresizingMaskIntoConstraints="NO" id="mvd-gT-o29">
+                                                <rect key="frame" x="325" y="777" width="48" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyLineEvent" translatesAutoresizingMaskIntoConstraints="NO" id="p3E-GF-K8w">
+                                                <rect key="frame" x="20" y="809" width="336" height="1"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xi2-O9-l3K">
+                                                <rect key="frame" x="20" y="740" width="62.5" height="28"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="이벤트">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="NotoSansKR-Bold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyImgEventAd" translatesAutoresizingMaskIntoConstraints="NO" id="FMt-Vf-rV5">
+                                                <rect key="frame" x="20" y="839" width="335" height="190"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="b29-1g-99U"/>
+                                                    <constraint firstAttribute="width" constant="335" id="uC3-yx-I0H"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armyImgEvent" translatesAutoresizingMaskIntoConstraints="NO" id="cKA-9i-nm4">
+                                                <rect key="frame" x="20" y="1029" width="335" height="79"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="335" id="91x-dj-ves"/>
+                                                    <constraint firstAttribute="height" constant="79" id="fzX-jK-9cf"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0l-9C-ODC">
+                                                <rect key="frame" x="35" y="1043" width="209.5" height="20"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="군인도! 부모님도! 선착순이벤트">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="NotoSansKR-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aw-Wx-OPO">
+                                                <rect key="frame" x="35" y="1069" width="167.5" height="17.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="2020.04.30 ~ 2020.06.30">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="15" name="NotoSansKR-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="p3E-GF-K8w" firstAttribute="top" secondItem="2UZ-IZ-r7T" secondAttribute="bottom" constant="7" id="0pQ-M8-txw"/>
+                                            <constraint firstItem="R0l-9C-ODC" firstAttribute="top" secondItem="FMt-Vf-rV5" secondAttribute="bottom" constant="14" id="34O-x9-ptE"/>
+                                            <constraint firstItem="FMt-Vf-rV5" firstAttribute="top" secondItem="p3E-GF-K8w" secondAttribute="bottom" constant="29" id="3kh-rB-K35"/>
+                                            <constraint firstItem="7aw-Wx-OPO" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="35" id="BIu-UC-ttM"/>
+                                            <constraint firstItem="mvd-gT-o29" firstAttribute="leading" secondItem="2UZ-IZ-r7T" secondAttribute="trailing" constant="190" id="Cec-ix-c5I"/>
+                                            <constraint firstItem="cKA-9i-nm4" firstAttribute="top" secondItem="FMt-Vf-rV5" secondAttribute="bottom" id="GPN-in-nLo"/>
+                                            <constraint firstItem="j5n-S9-TXM" firstAttribute="top" secondItem="NL7-k5-OJz" secondAttribute="bottom" constant="14" id="HRf-VQ-k50"/>
+                                            <constraint firstItem="Om3-gw-3mm" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="20" id="JGI-2Q-zac"/>
+                                            <constraint firstItem="wUx-qm-cg4" firstAttribute="top" secondItem="WHI-Ev-HvQ" secondAttribute="top" constant="56" id="KCP-bj-eQ4"/>
+                                            <constraint firstItem="2UZ-IZ-r7T" firstAttribute="top" secondItem="Xi2-O9-l3K" secondAttribute="bottom" constant="14" id="PTn-6f-9kO"/>
+                                            <constraint firstItem="Xi2-O9-l3K" firstAttribute="top" secondItem="Om3-gw-3mm" secondAttribute="bottom" constant="17" id="Q1R-t4-ixO"/>
+                                            <constraint firstItem="JII-g1-vz1" firstAttribute="top" secondItem="WHI-Ev-HvQ" secondAttribute="top" constant="44" id="QNJ-uL-epN"/>
+                                            <constraint firstItem="LRU-mk-fM5" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="20" id="RZo-By-JN5"/>
+                                            <constraint firstItem="Xi2-O9-l3K" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="20" id="SXT-1J-TQi"/>
+                                            <constraint firstAttribute="trailing" secondItem="JII-g1-vz1" secondAttribute="trailing" id="TIT-e7-HGS"/>
+                                            <constraint firstItem="BeE-57-Frk" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="37" id="UaF-t3-HxH"/>
+                                            <constraint firstItem="d19-Pv-NX4" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="131" id="UgD-ic-iJm"/>
+                                            <constraint firstItem="LRU-mk-fM5" firstAttribute="top" secondItem="j5n-S9-TXM" secondAttribute="bottom" constant="17" id="XCn-1S-15N"/>
+                                            <constraint firstItem="cKA-9i-nm4" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="20" id="XKT-We-muU"/>
+                                            <constraint firstItem="JII-g1-vz1" firstAttribute="width" secondItem="WHI-Ev-HvQ" secondAttribute="width" id="YZc-cU-g96"/>
+                                            <constraint firstItem="FMt-Vf-rV5" firstAttribute="width" secondItem="cKA-9i-nm4" secondAttribute="width" id="af8-2Z-sUW"/>
+                                            <constraint firstItem="R0l-9C-ODC" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="35" id="b1B-h6-lbi"/>
+                                            <constraint firstItem="NL7-k5-OJz" firstAttribute="top" secondItem="JII-g1-vz1" secondAttribute="bottom" constant="16" id="biC-qy-qgH"/>
+                                            <constraint firstItem="Om3-gw-3mm" firstAttribute="top" secondItem="LRU-mk-fM5" secondAttribute="bottom" constant="17" id="dXP-ou-PlT"/>
+                                            <constraint firstItem="p3E-GF-K8w" firstAttribute="top" secondItem="mvd-gT-o29" secondAttribute="bottom" constant="5" id="e11-3P-o2H"/>
+                                            <constraint firstItem="7aw-Wx-OPO" firstAttribute="top" secondItem="R0l-9C-ODC" secondAttribute="bottom" constant="6" id="f7G-Hr-4Cx"/>
+                                            <constraint firstAttribute="trailing" secondItem="wUx-qm-cg4" secondAttribute="trailing" constant="11" id="fNz-Vs-uH6"/>
+                                            <constraint firstItem="NL7-k5-OJz" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="20" id="hE1-ra-5ZJ"/>
+                                            <constraint firstItem="j5n-S9-TXM" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="20" id="hb9-RA-HcU"/>
+                                            <constraint firstItem="FMt-Vf-rV5" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="20" id="iPb-UI-bJ2"/>
+                                            <constraint firstItem="BeE-57-Frk" firstAttribute="top" secondItem="NL7-k5-OJz" secondAttribute="bottom" constant="31" id="jXN-bE-vfA"/>
+                                            <constraint firstItem="2UZ-IZ-r7T" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="27" id="koC-Vm-WVr"/>
+                                            <constraint firstItem="d19-Pv-NX4" firstAttribute="top" secondItem="WHI-Ev-HvQ" secondAttribute="top" constant="49" id="mlp-Gp-C80"/>
+                                            <constraint firstItem="JII-g1-vz1" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" id="tIb-Dm-Uy4"/>
+                                            <constraint firstItem="BeE-57-Frk" firstAttribute="centerX" secondItem="j5n-S9-TXM" secondAttribute="centerX" id="tbv-Dy-xWr"/>
+                                            <constraint firstItem="p3E-GF-K8w" firstAttribute="leading" secondItem="WHI-Ev-HvQ" secondAttribute="leading" constant="20" id="vxq-YM-DNr"/>
+                                            <constraint firstItem="wUx-qm-cg4" firstAttribute="leading" secondItem="d19-Pv-NX4" secondAttribute="trailing" constant="77" id="yaO-gV-GSk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WHI-Ev-HvQ" secondAttribute="bottom" id="Iec-N3-OVy"/>
+                                    <constraint firstAttribute="trailing" secondItem="WHI-Ev-HvQ" secondAttribute="trailing" id="JHX-Vj-AYy"/>
+                                    <constraint firstItem="WHI-Ev-HvQ" firstAttribute="leading" secondItem="OG1-01-LO5" secondAttribute="leading" id="Uot-1x-eC5"/>
+                                    <constraint firstItem="WHI-Ev-HvQ" firstAttribute="top" secondItem="OG1-01-LO5" secondAttribute="top" id="hvp-IL-QQK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OG1-01-LO5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6G6-gb-KPO"/>
+                            <constraint firstItem="WHI-Ev-HvQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" priority="250" id="6Hc-h9-5rE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OG1-01-LO5" secondAttribute="bottom" constant="-34" id="7tc-A1-Lu4"/>
+                            <constraint firstItem="OG1-01-LO5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AOy-T4-7dF"/>
+                            <constraint firstItem="WHI-Ev-HvQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="250" id="Ou8-cg-Txj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OG1-01-LO5" secondAttribute="trailing" id="T5M-yg-9Cw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="KIm-vJ-7hL"/>
+                    <size key="freeformSize" width="414" height="1125"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720.28985507246387" y="1162.8348214285713"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="armyBgThecamp" width="393" height="75"/>
+        <image name="armyBtnMyprofile" width="33" height="33"/>
+        <image name="armyBtnThecamp" width="123" height="47"/>
+        <image name="armyButtonEventArrow" width="48" height="27"/>
+        <image name="armyIconDonate" width="64" height="64"/>
+        <image name="armyIconDrama" width="64" height="64"/>
+        <image name="armyIconFinance" width="64" height="64"/>
+        <image name="armyIconFood" width="64" height="64"/>
+        <image name="armyIconSelf" width="64" height="64"/>
+        <image name="armyIconShop" width="64" height="64"/>
+        <image name="armyIconTrip" width="64" height="64"/>
+        <image name="armyIconWifi" width="64" height="64"/>
+        <image name="armyImgCultureBg" width="335" height="182"/>
+        <image name="armyImgEvent" width="335" height="79"/>
+        <image name="armyImgEventAd" width="335" height="190"/>
+        <image name="armyImgService1" width="335" height="100"/>
+        <image name="armyImgService2" width="335" height="100"/>
+        <image name="armyImgService3" width="335" height="100"/>
+        <image name="armyLineEvent" width="336" height="1"/>
+    </resources>
+</document>

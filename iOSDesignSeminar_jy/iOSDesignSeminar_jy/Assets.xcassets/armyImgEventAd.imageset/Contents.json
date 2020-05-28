@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "scale" : "1x",
+      "filename" : "armyImgEventAd.png",
+      "idiom" : "universal"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "armyImgEventAd@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "armyImgEventAd@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
